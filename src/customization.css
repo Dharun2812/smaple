@@ -1,0 +1,79 @@
+body {
+	--black: #000000;
+	--ash-black: #222;
+	--white: #fafafa;
+	--sky: #00ccff;
+	--green: #22dddd;
+	--blue: #1300ff;
+	--dusk: #6600ff;
+	--purple: #9900ff;
+	--pink: #ff0066;
+	--red: #fe0222;
+	--orange: #fd7702;
+	--yellow: #ffbb00;
+
+	--background: var(--white);
+	--accent: var(--red);
+}
+
+code,
+input {
+	font-family: input-mono, monospace;
+	font-weight: 400;
+	font-style: normal;
+}
+
+circle {
+	stroke-dashoffset: 0;
+	stroke-width: 15%;
+	fill: none;
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	border: 3px dotted var(--accent);
+	pointer-events: visibleFill;
+}
+
+.example {
+	display: flex;
+	align-items: center;
+}
+
+input {
+	accent-color: var(--accent);
+}
+
+.inputs {
+	display: flex;
+	flex-direction: column;
+	padding-left: 50px;
+}
+
+label {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+}
+
+label code {
+	width: 100px;
+}
+
+input[type='number'] {
+	border: 0;
+	border-bottom: 1px dotted var(--accent);
+	color: var(--accent);
+	margin-left: 10px;
+}
+
+input[type='number']:focus {
+	outline: none;
+	border-bottom: 2px solid var(--accent);
+}
+
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}

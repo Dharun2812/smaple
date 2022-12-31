@@ -1,0 +1,50 @@
+.button
+    $color: #ffffff
+    display: inline-block
+    border-radius: 4px
+    background-color: rgb(247,90,252)
+    border: none
+    color: $color
+    text:
+        align: center
+        decoration: none
+    font-size: 5vw
+    padding: 20px
+    width: 30vw
+    transition: all 0.5s
+    cursor: pointer
+    margin: 2.5vw
+    span
+        cursor: pointer
+        display: inline-block
+        position: relative
+        transition: 0.5s
+        a
+            color: $color
+    span:after
+        content: '\00bb'
+        position: absolute
+        opacity: 0
+        top: 0
+        right: -20px
+        transition: 0.5s
+    a
+        text-decoration: none
+        color: $color
+.button:hover
+    span
+        padding-right: 25px
+    span:after
+        opacity: 1
+        right: 0
+.content
+    text-align: center
+    background-color: rgb(102,255 ,240 )
+    margin: 0
+    padding: 20px
+    color: #000000
+.navs
+    display: flexbox
+    margin-left: 16vw
+    padding-top: 7vw
+    padding-bottom: 7vw

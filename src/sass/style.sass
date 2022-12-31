@@ -1,0 +1,23 @@
+@use "sass:meta"
+@mixin font($font...)
+    font-family: $font
+
+@mixin position($position:fixed,$color,$args...)
+    position: $position
+    position: fixed
+    background-color: $color
+    @if $position == sticky
+        position: -webkit-sticky //*Safari*/
+    @each $name, $color in meta.keywords($args)
+        #{$name}: $color
+
+body
+    margin: 0
+    background-color: #ffffff
+    @include font(-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif)
+
+footer
+    @include position(sticky,#333,$margin:0,$bottom:0,$width:100%,$display:block,$overflow:hidden,$padding:50px)
+
+code
+    @include font(source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace)

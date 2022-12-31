@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+	background-color: #ffffff;
+	font-family:/* cursive, fantasy, */ 'Courier New', Courier, monospace;
+}
+
+footer {
+	position: sticky;
+	position: fixed;
+	background-color: #333;
+	position: -webkit-sticky;
+	margin: 0;
+	bottom: 0;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	padding: 50px;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+/*# sourceMappingURL=style.css.map */
