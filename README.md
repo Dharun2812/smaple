@@ -1,2 +1,2 @@
-# smaple
+# sample
 react router example
